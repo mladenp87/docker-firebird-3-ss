@@ -2,7 +2,7 @@
 
 ## Description
 
-Firebird 3.0.2 SuperServer
+Firebird 3.0.3 SuperServer
 
 ### Provides
 
@@ -31,13 +31,14 @@ Firebird 3.0.2 SuperServer
 ## Run
 
 	$ docker run -d \
-		--name firebird \	
+		--name firebird \
+		--restart unless-stopped \
 		-p 3050:3050 \
 		-v /somehostdir/firebird/backup/:/backup/ \
 		-v /somehostdir/firebird/data/:/data/ \
         -e FIREBIRD_PASSWORD=secret \
         -e TZ=Europe/Sarajevo \
-		mladenp87/firebird-3.0.2-sc
+		mladenp87/firebird-3-ss
 
 ## Misc
 
