@@ -16,6 +16,7 @@ Firebird 3.0.4 SuperServer
 ### Exposed Ports
 
  * 3050
+ * 5000 RemoteAuxPort 
 
 ### Env
  
