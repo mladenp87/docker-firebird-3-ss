@@ -5,8 +5,8 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && apt-get install -y wget libtommath1 libicu-dev vim nano tzdata procps && \
     ln -sf /usr/lib/x86_64-linux-gnu/libtommath.so.1 /usr/lib/x86_64-linux-gnu/libtommath.so.0 && \
     cd /root && \
-    wget https://github.com/FirebirdSQL/firebird/releases/download/R3_0_6/Firebird-3.0.6.33328-0.amd64.tar.gz && \
-    tar xzvpf Firebird-3.0.6.33328-0.amd64.tar.gz && cd Firebird-3.0.6.33328-0.amd64/ && ./install.sh -silent && \
+    wget https://github.com/FirebirdSQL/firebird/releases/download/R3_0_7/Firebird-3.0.7.33374-0.amd64.tar.gz && \
+    tar xzvpf Firebird-3.0.7.33374-0.amd64.tar.gz && cd Firebird-3.0.7.33374-0.amd64/ && ./install.sh -silent && \
     echo "RemoteAuxPort = 5000" >>/opt/firebird/firebird.conf
 
 ENV PATH $PATH:/opt/firebird/bin
