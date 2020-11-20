@@ -2,7 +2,7 @@
 
 ## Description
 
-Firebird 3.0.6 SuperServer
+Firebird 3.0.7 SuperServer
 
 ### Provides
 
